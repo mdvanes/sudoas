@@ -1,13 +1,11 @@
 // TODO multi threading?
-import assert from "assert";
-// @ts-ignore
-import { performance } from "perf_hooks";
+
 import myModule from "..";
 import { getPrimesTs } from "./getPrimesTsHelper";
 import { testPrime } from "./testPrimeHelper";
 
 const { __pin, getPrimes } = myModule;
-// Fix ts-expect-error with exporting ID? TODO
+// TODO Fix ts-expect-error with exporting ID?
 // @ts-expect-error
 const { __getArray } = myModule;
 
@@ -18,4 +16,4 @@ testPrime("AS", (x) => __getArray(__pin(getPrimes(x))), NR_OF_PRIMES, EXPECTED_L
 
 testPrime("TS", (x) => Array.from(getPrimesTs(x)), NR_OF_PRIMES, EXPECTED_LAST_PRIME);
 
-console.log("ok");
+console.log("done");
