@@ -1,0 +1,2 @@
+yarn asbuild
+yarn test
