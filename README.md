@@ -6,8 +6,9 @@ See https://www.assemblyscript.org/quick-start.html
 
 # Developing
 
-yarn asbuild
-yarn test
+* yarn asbuild
+* yarn test
 
 files in public/ are manually copied (optimized.wasm, loader.js)
-	serve public/
+
+* yarn serve
