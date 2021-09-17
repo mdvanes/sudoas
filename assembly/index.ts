@@ -29,4 +29,5 @@ export function getPrimes(amount: i32): Int32Array {
   return primesFiltered;
 }
 
+// export const Int32Array_ID = idof<Int32Array>();
 // TODO needs Int32Array_ID conform createArray example?
